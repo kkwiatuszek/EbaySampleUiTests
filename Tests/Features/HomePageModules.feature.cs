@@ -73,156 +73,129 @@ namespace Tests.Features
         
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories(string categories, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "done"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Menu with tabs display correct categories", @__tags);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Menu with tabs display correct categories", exampleTags);
+#line 10
 this.ScenarioSetup(scenarioInfo);
 #line 7
 this.FeatureBackground();
-#line 12
+#line 11
  testRunner.Then(string.Format("menu tab should show correct {0}", categories), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Fashion", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Fashion", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_Fashion()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Fashion", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Home & Garden", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Home & Garden", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_HomeGarden()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Home & Garden", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Electronics", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Electronics", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_Electronics()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Electronics", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Sports & Leisure", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Sports & Leisure", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_SportsLeisure()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Sports & Leisure", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Collectables", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Collectables", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_Collectables()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Collectables", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Health & Beauty", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Health & Beauty", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_HealthBeauty()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Health & Beauty", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Motors", new string[] {
-                "done"}, SourceLine=14)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, Motors", SourceLine=13)]
         public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_Motors()
         {
             this.HomePageModules_MenuWithTabsDisplayCorrectCategories("Motors", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Menu with tabs display correct categories, More", new string[] {
-                "done"}, SourceLine=14)]
-        public virtual void HomePageModules_MenuWithTabsDisplayCorrectCategories_More()
-        {
-            this.HomePageModules_MenuWithTabsDisplayCorrectCategories("More", ((string[])(null)));
-#line hidden
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Category tab in menu has a drop down list with subcategories", new string[] {
-                "done"}, SourceLine=24)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Category tab in menu has a drop down list with subcategories", SourceLine=21)]
         public virtual void HomePageModules_CategoryTabInMenuHasADropDownListWithSubcategories()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Category tab in menu has a drop down list with subcategories", new string[] {
-                        "done"});
-#line 25
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Category tab in menu has a drop down list with subcategories", ((string[])(null)));
+#line 22
 this.ScenarioSetup(scenarioInfo);
 #line 7
 this.FeatureBackground();
-#line 26
+#line 23
  testRunner.When("I hover \"Collectables\" category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 27
+#line 24
  testRunner.Then("list of subcategories is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Clicking on category tab redirects to correct page", new string[] {
-                "done"}, SourceLine=29)]
+        [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Clicking on category tab redirects to correct page", SourceLine=25)]
         public virtual void HomePageModules_ClickingOnCategoryTabRedirectsToCorrectPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Clicking on category tab redirects to correct page", new string[] {
-                        "done"});
-#line 30
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Clicking on category tab redirects to correct page", ((string[])(null)));
+#line 26
 this.ScenarioSetup(scenarioInfo);
 #line 7
 this.FeatureBackground();
-#line 31
+#line 27
  testRunner.When("I click \"Electronics\" category", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
+#line 28
  testRunner.Then("page redirects to  \"Electronics\" category page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Banner carousel\'s arrow navigates to different image on the lef" +
-            "t", new string[] {
-                "test"}, SourceLine=34)]
+            "t", SourceLine=29)]
         public virtual void HomePageModules_BannerCarouselSArrowNavigatesToDifferentImageOnTheLeft()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Banner carousel\'s arrow navigates to different image on the lef" +
-                    "t", new string[] {
-                        "test"});
-#line 35
+                    "t", ((string[])(null)));
+#line 30
 this.ScenarioSetup(scenarioInfo);
 #line 7
 this.FeatureBackground();
-#line 36
+#line 31
  testRunner.When("I click left arrow on carousel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 37
+#line 32
  testRunner.Then("image changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("HomePageModules - Banner carousel\'s arrow navigates to different image on the rig" +
-            "ht", SourceLine=38)]
+            "ht", SourceLine=33)]
         public virtual void HomePageModules_BannerCarouselSArrowNavigatesToDifferentImageOnTheRight()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("HomePageModules - Banner carousel\'s arrow navigates to different image on the rig" +
                     "ht", ((string[])(null)));
-#line 39
+#line 34
 this.ScenarioSetup(scenarioInfo);
 #line 7
 this.FeatureBackground();
-#line 40
+#line 35
  testRunner.When("I click right arrow on carousel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 41
+#line 36
  testRunner.Then("image changes", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

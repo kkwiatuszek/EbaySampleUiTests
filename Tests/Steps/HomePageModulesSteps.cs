@@ -9,11 +9,14 @@ namespace Tests.Steps
     [Binding]
     public class HomePageModulesSteps
     {
+        public static string defaultImage { get; set; }
+
         [Given(@"I have navigated to home page of ebay")]
         public void GivenIHaveNavigatedToHomePageOfEbay()
         {
             Browser.NavigateTo("http://www.ebay.co.uk/");
             Sync.WaitUntilPageIsCompletelyLoaded();
+            defaultImage = Pages.HomePage.GetUrlOfImage();
         }
         
         [When(@"I hover ""(.*)"" category")]
@@ -62,7 +65,7 @@ namespace Tests.Steps
         [Then(@"image changes")]
         public void ThenImageChanges()
         {
-
+            Pages.HomePage.GetUrlOfImage().ShouldNotBe(defaultImage);
         }
     }
 }

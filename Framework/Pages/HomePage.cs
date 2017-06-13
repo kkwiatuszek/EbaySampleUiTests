@@ -28,7 +28,7 @@ namespace Framework.Pages
         private IWebElement _carouselRightArrow;
 
         [FindsBy(How = How.CssSelector, Using = ".hl-banner-carousel__cell[aria-hidden='false'] .hl-image")]
-        private IWebElement _
+        private IWebElement _displayedImage;
 
 
         public void ClickCategory(string categoryName)
@@ -71,7 +71,7 @@ namespace Framework.Pages
 
         public string GetUrlOfImage()
         {
-            
+            return _displayedImage.GetCssValue("background-image");
         }
     }
 }
